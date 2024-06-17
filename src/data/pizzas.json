@@ -4,7 +4,7 @@
     "id": "P001",
     "img": "../../../public/zucca.png",
     "ingredients": ["mozzarella", "tomates", "jamón", "orégano"],
-    "name": "napolitana",
+    "name": "Napolitana",
     "price": 5950
   },
   {
@@ -12,7 +12,7 @@
     "id": "P002",
     "img": "../../../public/bascaiola.png",
     "ingredients": ["mozzarella", "tomates", "jamón", "choricillo"],
-    "name": "española",
+    "name": "Española",
     "price": 7250
   },
   {
@@ -20,7 +20,7 @@
     "id": "P003",
     "img": "../../../public/francescana.png",
     "ingredients": ["mozzarella", "tomates", "salame", "orégano"],
-    "name": "salame",
+    "name": "Salame",
     "price": 5990
   },
   {
@@ -28,7 +28,7 @@
     "id": "P004",
     "img": "../../../public/pesto.png",
     "ingredients": ["mozzarella", "salame", "aceitunas", "champiñones"],
-    "name": "cuatro estaciones",
+    "name": "Cuatro estaciones",
     "price": 9590
   },
   {
@@ -36,7 +36,7 @@
     "id": "P005",
     "img": "../../../public/mediterranea.png",
     "ingredients": ["mozzarella", "tomates cherry", "bacon", "orégano"],
-    "name": "bacon",
+    "name": "Bacon",
     "price": 6450
   },
   {
@@ -44,7 +44,7 @@
     "id": "P006",
     "img": "../../../public/ricotta.png",
     "ingredients": ["mozzarella", "pimientos", "pollo grillé", "orégano"],
-    "name": "pollo picante",
+    "name": "Pollo picante",
     "price": 8500
   }
 ]

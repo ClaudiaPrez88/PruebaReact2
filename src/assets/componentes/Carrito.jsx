@@ -16,7 +16,11 @@ const Carrito = () => {
             <MDBCard className="mb-4">
               <MDBCardHeader className="py-3">
                 <MDBTypography tag="h5" className="mb-0">
-                  Carrito - {Carrito.length > 0 && <span className="cart-count">({Carrito.length})</span>} items
+                  Carrito - 
+                  {Carrito.length > 0 ? (
+                  <span className="cart-count">({calcularTotalCantidadCarrito()})</span>
+                  ):(" (0) ")}
+
                 </MDBTypography>
               </MDBCardHeader>
               <MDBCardBody>
@@ -33,7 +37,7 @@ const Carrito = () => {
                         <strong>{pizza.name}</strong>
                       </p>
                       <p>Precio por unidad: ${pizza.price}</p>
-                      <p>Cantidad en carrito: {pizza.cantidad}</p>
+                      <p>Unidades en carrito: {pizza.cantidad}</p>
                       
                     </MDBCol>
 
@@ -78,7 +82,7 @@ const Carrito = () => {
             <MDBListGroup flush>
             <MDBListGroupItem className="d-flex justify-content-between align-items-center px-0">
                 Pizzas totales:
-                <span>{calcularTotalCantidadCarrito()} u</span>
+                <span>{calcularTotalCantidadCarrito()}</span>
               </MDBListGroupItem>
               <MDBListGroupItem className="d-flex justify-content-between align-items-center px-0">
                 Envio

@@ -1,4 +1,4 @@
-// components/Carrito.js
+
 import React, { useContext } from "react";
 import {MDBBtn, MDBCard,MDBCardBody,MDBCardHeader, MDBCol, MDBContainer, MDBIcon,MDBListGroup, MDBListGroupItem, MDBRow,MDBTypography} from "mdb-react-ui-kit";
 import { ContextPizzas } from "../../context/Context";

@@ -36,7 +36,9 @@ function Detalle() {
         setCantidad(cantidad - 1);
       }
     };
+    const imgSrc = `/public/${filteredPizza.img}`; 
 
+    console.log(imgSrc)
     return (
       <div id='detalle'>
         <Container>
@@ -44,7 +46,7 @@ function Detalle() {
             {filteredPizza && (
               <>
                 <Col md={6} lg={5}>
-                  <img src={filteredPizza.img} alt="Pizza" className='img-detalle'/>
+                  <img src={imgSrc} alt="Pizza" className='img-detalle'/>
                 </Col>
                 <Col md={6} lg={7}>
                   <h1 className='titulo'>{filteredPizza.name}</h1>

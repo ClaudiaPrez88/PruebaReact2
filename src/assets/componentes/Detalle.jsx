@@ -64,7 +64,7 @@ function Detalle() {
                       </li>
                     ))}
                   </ul>
-                  <p className='price'>Precio: ${filteredPizza.price}</p>
+                  <p className='price'>Prezzo: ${filteredPizza.price}</p>
                       <div className="botones-cantidad">
                         <MDBBtn className="px-3 me-2" onClick={() => disminuir()}>
                         <MDBIcon fas icon="minus" />

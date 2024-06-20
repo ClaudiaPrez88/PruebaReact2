@@ -58,10 +58,11 @@ padding:2px;
   height: 600px;
 }
 .botones-detalle{
-  width: 400px;
+  width: 500px;
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  flex-wrap: nowrap;
 }
 
 img.logo{
@@ -87,7 +88,7 @@ a.nav-link {
 .botones{
   display:flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .price{
   color: #d2401e;
@@ -175,7 +176,7 @@ nav a {
 .card {
   border: none !important;
   box-shadow: none !important;
-  margin-bottom: 50px !important;
+  margin-bottom: 0px !important;
 }
 .card-title.h5 {
   background-position: 0px 0px ;
@@ -303,4 +304,13 @@ button.navbar-toggler {
 .card-body .row {
   border-bottom: 0.5px solid #cac5c5;
   padding: 20px 0px;
+}
+@media screen and (max-width:500px) {
+  .botones-detalle{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .botones-detalle button{
+    width: 100%;
+  }
 }

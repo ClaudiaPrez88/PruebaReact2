@@ -43,7 +43,7 @@ function Detalle() {
     //arreglo link pizza"
     let imgSrc = filteredPizza.img;
     if (imgSrc.startsWith("./")) {
-    imgSrc = `public/pizza/${imgSrc.substring(1)}`; 
+    imgSrc = `/public${imgSrc.substring(1)}`; 
     }
 
     return (

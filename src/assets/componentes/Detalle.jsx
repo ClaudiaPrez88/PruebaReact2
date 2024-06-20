@@ -39,7 +39,10 @@ function Detalle() {
     };
     console.log(Pizzas)
     console.log(filteredPizza)
-  
+    let pizzaLink = filteredPizza.img;
+    if (pizzaLink.startsWith("./")) {
+      pizzaLink = `../../../public${pizzaLink.substring(1)}`; 
+    }
 
     return (
       <div id='detalle'>
@@ -48,7 +51,7 @@ function Detalle() {
             {filteredPizza && (
               <>
                 <Col md={6} lg={5}>
-                  <img src={filteredPizza.img} alt="Pizza" className='img-detalle'/>
+                  <img src={pizzaLink} alt="Pizza" className='img-detalle'/>
                 </Col>
                 <Col md={6} lg={7}>
                   <h1 className='titulo'>{filteredPizza.name}</h1>

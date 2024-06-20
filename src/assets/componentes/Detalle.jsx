@@ -37,8 +37,8 @@ function Detalle() {
         setCantidad(cantidad - 1);
       }
     };
-    console.log(Pizzas)
-    console.log(filteredPizza)
+    
+    //Arreglo link para Vercel//
     let pizzaLink = filteredPizza.img;
     if (pizzaLink.startsWith("./")) {
       pizzaLink = `../../../${pizzaLink.substring(1)}`; 

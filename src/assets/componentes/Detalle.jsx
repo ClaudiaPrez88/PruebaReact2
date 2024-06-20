@@ -39,12 +39,7 @@ function Detalle() {
     };
     console.log(Pizzas)
     console.log(filteredPizza)
-    
-    //arreglo link pizza"
-    let imgSrc = filteredPizza.img;
-    if (imgSrc.startsWith("./")) {
-    imgSrc = `/public${imgSrc.substring(1)}`; 
-    }
+  
 
     return (
       <div id='detalle'>
@@ -53,7 +48,7 @@ function Detalle() {
             {filteredPizza && (
               <>
                 <Col md={6} lg={5}>
-                  <img src={imgSrc} alt="Pizza" className='img-detalle'/>
+                  <img src={filteredPizza.img} alt="Pizza" className='img-detalle'/>
                 </Col>
                 <Col md={6} lg={7}>
                   <h1 className='titulo'>{filteredPizza.name}</h1>

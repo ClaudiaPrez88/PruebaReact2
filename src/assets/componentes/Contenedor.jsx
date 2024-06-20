@@ -12,6 +12,7 @@ function Contenedor({imagen,titulo,ingredientes,precio,id,agregarAlCarrito}) {
   const handleAgregarAlCarrito = () => {
     agregarAlCarrito(id);
   };
+   
 
   return (
     <div>

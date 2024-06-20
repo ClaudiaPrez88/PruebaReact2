@@ -11,6 +11,7 @@ function Detalle() {
     const { agregarAlCarritoDetalle, Pizzas} = useContext(ContextPizzas);
 
     const filteredPizza = Pizzas.find((pizza) => pizza.id === id);
+
     const navigate = useNavigate();
     const irHome = () => {
       navigate("/");
@@ -36,11 +37,13 @@ function Detalle() {
         setCantidad(cantidad - 1);
       }
     };
+    console.log(Pizzas)
+    console.log(filteredPizza)
     
     //arreglo link pizza"
     let imgSrc = filteredPizza.img;
     if (imgSrc.startsWith("./")) {
-    imgSrc = `/public${imgSrc.substring(1)}`; 
+    imgSrc = `public/pizza/${imgSrc.substring(1)}`; 
     }
 
     return (

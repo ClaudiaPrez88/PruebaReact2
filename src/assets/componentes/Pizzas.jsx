@@ -7,6 +7,7 @@ import { ContextPizzas } from "../../context/Context";
 
 export const Pizzas = () => {
     const { Pizzas, agregarAlCarrito } = useContext(ContextPizzas);
+    console.log(Pizzas)
   return (
     <Container>
     <Row>

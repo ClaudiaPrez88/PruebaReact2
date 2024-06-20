@@ -36,9 +36,13 @@ function Detalle() {
         setCantidad(cantidad - 1);
       }
     };
-    const imgSrc = `/public/${filteredPizza.img}`; 
+    
+    //arreglo link pizza"
+    let imgSrc = filteredPizza.img;
+    if (imgSrc.startsWith("./")) {
+    imgSrc = `/public${imgSrc.substring(1)}`; 
+    }
 
-    console.log(imgSrc)
     return (
       <div id='detalle'>
         <Container>

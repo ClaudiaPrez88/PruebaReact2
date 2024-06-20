@@ -41,7 +41,7 @@ function Detalle() {
     console.log(filteredPizza)
     let pizzaLink = filteredPizza.img;
     if (pizzaLink.startsWith("./")) {
-      pizzaLink = `../../../public${pizzaLink.substring(1)}`; 
+      pizzaLink = `../../../${pizzaLink.substring(1)}`; 
     }
 
     return (

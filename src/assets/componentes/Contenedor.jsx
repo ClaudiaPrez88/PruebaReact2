@@ -27,8 +27,8 @@ function Contenedor({imagen,titulo,ingredientes,precio,id,agregarAlCarrito}) {
         </Card.Text>
         <p className='price'>Precio: ${precio}</p>
         <div className='botones'>
-          <Button className='btn-detalle' onClick={() => handleNavigate(id)}>Ver más</Button>
-          <Button className='btn-comprar' onClick={handleAgregarAlCarrito}>añadir</Button>
+          <Button className='btn-detalle' onClick={() => handleNavigate(id)}>Dettagli</Button>
+          <Button className='btn-comprar' onClick={handleAgregarAlCarrito}>Aggiungi</Button>
         </div>
       </Card.Body>
     </Card>

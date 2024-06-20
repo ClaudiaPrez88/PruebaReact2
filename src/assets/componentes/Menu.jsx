@@ -25,7 +25,7 @@ export const Menu = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-              <Link to="/carrito"> <p className='link-cart'>Mi carrito</p>
+              <Link to="/carrito"> <p className='link-cart'>Il mio carrello</p>
                 <FaShoppingCart/>
                 <span>
                 {Carrito.length > 0 ? (

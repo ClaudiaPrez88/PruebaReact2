@@ -24,7 +24,7 @@ function Detalle() {
     };
   
     if (!filteredPizza) {
-      return <p>Pizza no encontrada</p>
+      return <p>Non è stata trovata</p>
     }
 
     const [cantidad, setCantidad] = useState(0)
@@ -56,7 +56,7 @@ function Detalle() {
                 <Col md={6} lg={7}>
                   <h1 className='titulo'>{filteredPizza.name}</h1>
                   <p>{filteredPizza.desc}</p>
-                  <p className='sub-titulo'>Ingredientes:</p>
+                  <p className='sub-titulo'>Ingredienti:</p>
                   <ul>
                     {filteredPizza.ingredients.map((ingrediente, index) => (
                       <li className='ingredientes' key={index}>
@@ -75,8 +75,8 @@ function Detalle() {
                         </MDBBtn>
                       </div>
                   <div className='botones-detalle'>
-                    <Button className='btn-comprar'  onClick={handleAgregarAlCarrito} >Añadir al Carrito</Button>
-                    <Button className='btn-detalle' onClick={irHome}>Regresar</Button>
+                    <Button className='btn-comprar'  onClick={handleAgregarAlCarrito} >Aggiungi all'ordine</Button>
+                    <Button className='btn-detalle' onClick={irHome}>Torna indietro</Button>
                   </div>
                 </Col>
               </>

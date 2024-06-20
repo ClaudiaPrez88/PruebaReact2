@@ -6,7 +6,6 @@ import { ContextPizzas } from "../../context/Context";
 const Carrito = () => {
   const { Carrito, calcularTotalCarrito, disminuirCantidad, aumentarCantidad,eliminarPizzaDelCarrito,calcularTotalCantidadCarrito } = useContext(ContextPizzas);
 
-  console.log(Carrito)
 
   return (
     <section className="h-100 gradient-custom">
@@ -16,7 +15,7 @@ const Carrito = () => {
             <MDBCard className="mb-4">
               <MDBCardHeader className="py-3">
                 <MDBTypography tag="h5" className="mb-0">
-                  Carrito - 
+                Carrello - 
                   {Carrito.length > 0 ? (
                   <span className="cart-count">({calcularTotalCantidadCarrito()})</span>
                   ):(" (0) ")}
@@ -36,8 +35,8 @@ const Carrito = () => {
                       <p>
                         <strong>{pizza.name}</strong>
                       </p>
-                      <p>Precio por unidad: ${pizza.price}</p>
-                      <p>Unidades en carrito: {pizza.cantidad}</p>
+                      <p>Prezz: ${pizza.price}</p>
+                      <p>Quantità: {pizza.cantidad}</p>
                       
                     </MDBCol>
 
@@ -64,7 +63,7 @@ const Carrito = () => {
                     </MDBCol>
                   </MDBRow>
                 ))):(
-                    <p>Tu carrito esta vacio.</p>
+                    <p>Il carrello è vuoto.</p>
                   )}
                 
               </MDBCardBody>
@@ -74,24 +73,24 @@ const Carrito = () => {
         <MDBCard className="mb-4">
           <MDBCardHeader>
             <MDBTypography tag="h5" className="mb-0">
-             Total
+             Totale
             </MDBTypography>
           </MDBCardHeader>
           <MDBCardBody>
             
             <MDBListGroup flush>
             <MDBListGroupItem className="d-flex justify-content-between align-items-center px-0">
-                Pizzas totales:
+            Ordine totale:
                 <span>{calcularTotalCantidadCarrito()}</span>
               </MDBListGroupItem>
               <MDBListGroupItem className="d-flex justify-content-between align-items-center px-0">
-                Envio
-                <span>Gratis</span>
+              Consegna:
+                <span>Gratuito</span>
               </MDBListGroupItem>
               <MDBListGroupItem
                 className="d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                 <div>
-                  <strong>Total:</strong>
+                  <strong>Totale:</strong>
                 </div>
                 <span>
                   <strong>${calcularTotalCarrito()}</strong>
@@ -100,7 +99,7 @@ const Carrito = () => {
             </MDBListGroup>
 
             <MDBBtn block size="lg">
-             Pagar
+            Procedi all'acquisto
             </MDBBtn>
           </MDBCardBody>
         </MDBCard>

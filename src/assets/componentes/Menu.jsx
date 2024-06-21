@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { useContext } from "react";
 import { ContextPizzas } from "../../context/Context";
 import Logo from "../../../public/pizza-ico.png"
+import { BiMenu } from "react-icons/bi";
 
 
 export const Menu = () => {
@@ -22,7 +23,9 @@ export const Menu = () => {
           <p className='logo-texto'>Pizza al taglio</p>
         </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <BiMenu className='boton-menu' />
+          </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
               <Link to="/carrito"> <p className='link-cart'>Il mio carrello</p>

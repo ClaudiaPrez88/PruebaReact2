@@ -9,7 +9,7 @@ export const Pizzas = () => {
     const { Pizzas, agregarAlCarrito } = useContext(ContextPizzas);
     console.log(Pizzas)
   return (
-    <Container>
+    <Container id="pizzas">
     <Row>
       <Col className="sec-titulo" xs={12}>
         <h5 className="sub-titulo">Scegli quella che vuoi</h5>

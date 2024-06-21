@@ -16,7 +16,7 @@ export const Pizzas = () => {
         <h1 className="titulo">Il miglior menu in citta</h1>
       </Col>
       {Pizzas.map((pizza, index) =>(
-        <Col key={index}>
+        <Col xs={12} md={6} lg={4} key={index}>
             <Contenedor titulo={pizza.name} ingredientes={pizza.ingredients} precio={pizza.price} imagen={pizza.img} id={pizza.id}  agregarAlCarrito={agregarAlCarrito}/>
         </Col>
       ))}

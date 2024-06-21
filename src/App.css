@@ -58,13 +58,11 @@ padding:2px;
   height: 600px;
 }
 .botones-detalle{
-  width: 500px;
-  display: flex;
-  justify-content: space-between;
   padding-top: 10px;
-  flex-wrap: nowrap;
 }
-
+.botones-detalle button{
+  margin: 0px 10px
+}
 img.logo{
   width: 80px;
   height: auto;
@@ -87,8 +85,17 @@ a.nav-link {
 }
 .botones{
   display:flex;
-  justify-content: space-around;
-  margin-bottom: 50px;
+  justify-content:space-between;
+  margin-top: 10px;
+}
+
+img.card-img-top {
+  width: 286px !important;
+  display: block;
+  margin: 0 auto;
+}
+.botones button {
+  margin-right: 10px;
 }
 .price{
   color: #d2401e;
@@ -110,8 +117,9 @@ a.nav-link {
 #detalle .titulo{
   text-align: left;
 }
-button.px-3 {
-  height: 40px;
+button.ripple.ripple-surface.btn.btn-danger.me-2 {
+  height: 49px;
+  margin-left: 10px;
 }
 .botones-cantidad {
   display: flex;
@@ -140,8 +148,9 @@ nav a {
 .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.1);
 }
-.carousel-control-next-icon , .carousel-control-prev-icon{
-  background-image: none !important
+span.carousel-control-next-icon , span.carousel-control-prev-icon, a.carousel-control-next, a.carousel-control-prev{
+  background-image: none !important;
+  text-decoration: none !important;
 }
 
 .img-banner{
@@ -176,7 +185,16 @@ nav a {
 .card {
   border: none !important;
   box-shadow: none !important;
-  margin-bottom: 0px !important;
+}
+#pizzas .card {
+  margin-bottom: 50px !important;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+p.card-text {
+  height: 40px;
 }
 .card-title.h5 {
   background-position: 0px 0px ;
@@ -302,16 +320,23 @@ li.ingredientes {
   font-size: 44px;
   color: #ffffff;
 }
+
 .card-body .row {
   border-bottom: 0.5px solid #cac5c5;
   padding: 20px 0px;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:991px) {
   .botones-detalle{
     width: 100%;
-    flex-wrap: wrap;
   }
   .botones-detalle button{
-    width: 100%;
+    margin: 10px 0px;
+    width:100%;
   }
+  #detalle {
+    margin: 50px 0px;
+}
+#carrito img.w-100 {
+  width: 100px !important;
+}
 }

@@ -16,7 +16,7 @@ function Contenedor({imagen,titulo,ingredientes,precio,id,agregarAlCarrito}) {
 
   return (
     <div>
-      <Card style={{ width: '18rem' }}>
+      <Card>
       <Card.Img variant="top" src={imagen} />
       <Card.Body>
         <Card.Title>{titulo}</Card.Title>
@@ -26,12 +26,13 @@ function Contenedor({imagen,titulo,ingredientes,precio,id,agregarAlCarrito}) {
             </p>
         </Card.Text>
         <p className='price'>Prezzo: ${precio}</p>
-      </Card.Body>
-    </Card>
-    <div className='botones'>
+        <div className='botones'>
       <Button className='btn-detalle' onClick={() => handleNavigate(id)}>Dettagli</Button>
       <Button className='btn-comprar' onClick={handleAgregarAlCarrito}>Aggiungi</Button>
     </div>
+      </Card.Body>
+    </Card>
+    
     </div>
   )
 }

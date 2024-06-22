@@ -7,6 +7,7 @@ function Contenedor({imagen,titulo,ingredientes,precio,id,agregarAlCarrito}) {
 
   const navigate = useNavigate();
   const handleNavigate = (id) => {
+    window.scrollTo(0, 0);
     navigate(`/pizza/${id}`);
   };
   const handleAgregarAlCarrito = () => {

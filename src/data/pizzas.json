@@ -1,0 +1,50 @@
+[
+  {
+    "desc": "Questa pizza offre un sapore delicato e fresco grazie ai fiori di zucca, che aggiungono una nota leggermente dolce e floreale al piatto. Storicamente, questa pizza ha radici nella cucina italiana tradizionale, dove i fiori di zucca venivano utilizzati per aggiungere varietà e gusto alle pizze regionali, diventando una scelta apprezzata per i palati che cercano sapori autentici e freschi.",
+    "id": "P001",
+    "img": "./zucca.png",
+    "ingredients": ["Fiori di zucca freschi", "Mozzarella", "Pomodoro", "Basilico"],
+    "name": "Fiori di zucca",
+    "price": 5950
+  },
+  {
+    "desc": "Ha radici nella tradizione culinaria italiana, caratterizzata dall'uso di ingredienti rustici come funghi porcini e salsiccia. Questa combinazione crea un gusto robusto e aromatico, rappresentando un piatto che celebra i sapori della campagna italiana con olio d'oliva e erbe aromatiche.",
+    "id": "P002",
+    "img": "./bascaiola.png",
+    "ingredients": ["Funghi porcini", "Salsiccia", "Mozzarella", "Pomodoro"],
+    "name": "Bascaiola",
+    "price": 7250
+  },
+  {
+    "desc": "Ha una storia legata alla cucina italiana, rinomata per l'utilizzo di ingredienti di alta qualità come prosciutto crudo, rucola fresca e parmigiano reggiano. Questa combinazione crea un sapore equilibrato tra il salato del prosciutto crudo e il fresco della rucola, rappresentando un piatto che esalta la tradizione culinaria regionale con un tocco di eleganza e freschezza.",
+    "id": "P003",
+    "img": "./francescana.png",
+    "ingredients": ["Prosciutto crudo", "Rucola", "Parmigiano reggiano", "Mozzarella", "Pomodoro", "Basilico"],
+    "name": "Francescana",
+    "price": 5990
+  },
+  {
+    "desc": "Ha origini nella cucina ligure, famosa per il suo pesto alla genovese preparato con basilico fresco, olio extravergine d'oliva, formaggio Parmigiano Reggiano, formaggio Pecorino Sardo, pinoli e aglio. Questa combinazione crea un sapore fresco e aromatico, rappresentando un piatto che celebra i sapori intensi e aromatici della Liguria, rendendolo un'opzione gustosa e apprezzata nella cucina italiana.",
+    "id": "P004",
+    "img": "./pesto.png",
+    "ingredients": ["Pesto alla genovese", "Mozzarella", "Pomodoro", "pomodori secchi", "Basilico fresco"],
+    "name": "Pesto",
+    "price": 9590
+  },
+  {
+    "desc": "Ha radici nella tradizione culinaria italiana, nota per l'uso del tartufo come ingrediente principale o condimento. Questa pizza è arricchita con crema al tartufo (tartufo nero o bianco), funghi porcini, mozzarella, prosciutto crudo o speck, olio extravergine d'oliva e sale. Il risultato è un sapore intenso e sofisticato che celebra il tartufo, considerato un prelibato ingrediente della cucina italiana, offrendo un'esperienza culinaria ricca e raffinata.",
+    "id": "P005",
+    "img": "./tartufata.png",
+    "ingredients": ["Crema al tartufo", "Mozzarella", "Funghi porcini", "Prosciutto crudo"],
+    "name": "Tartufata",
+    "price": 6450
+  },
+  {
+    "desc": "Questa pizza rappresenta un piatto della tradizione italiana che combina la morbidezza della ricotta con la freschezza degli spinaci. Questa pizza è caratterizzata dall'utilizzo di ricotta fresca spalmata sulla base, spinaci freschi o saltati con aglio e olio, mozzarella, Parmigiano Reggiano grattugiato, e olio extravergine d'oliva. Il risultato è un sapore delicato e cremoso, arricchito dai sapori aromatici degli spinaci e dalla consistenza cremosa della ricotta, rendendo questa pizza una scelta apprezzata per chi ama i piatti gustosi e tradizionali della cucina italiana.",
+    "id": "P006",
+    "img": "./ricotta.png",
+    "ingredients": ["Ricotta fresca", "Spinaci freschi", "Mozzarella", "Parmigiano Reggiano grattugiato", "Aglio"],
+    "name": "Riccota e spinaci",
+    "price": 8500
+  }
+]
